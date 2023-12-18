@@ -21,4 +21,4 @@ async def get_items_data(
 if __name__ == '__main__':
     DBManager.create_tables()
     DBManager.insert_mock_data()
-    uvicorn.run('main:app', reload=True)
+    uvicorn.run('main:app', reload=True, host='0.0.0.0', port=8000)
