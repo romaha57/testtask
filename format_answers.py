@@ -11,6 +11,7 @@ def format_items_data(items_data: list[Type[Record]]) -> dict:
     record_list = [i.__dict__ for i in items_data]
     result_data = {}
 
+    # группируем словарь по ключу и затем проходимся по сгруппированным элементам для добавления во вложенный словарь
     for main_category, group in groupby(record_list, lambda elem: elem['main_category']):
         result_data[main_category] = {}
         for category, group2 in groupby(group, lambda elem: elem['category']):
