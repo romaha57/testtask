@@ -1,14 +1,12 @@
 from typing import Type
 
-from sqlalchemy import select, text
-
-from mock_data import mock_records
-from connect_db import engine
+from app.mock_data import mock_records
+from app.connect_db import engine
 from sqlalchemy.orm import Session
-from connect_db import Base
+from app.connect_db import Base
 
 
-from models import Record
+from app.models import Record
 
 
 class Singleton(type):

@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String
 
-from connect_db import Base
+from app.connect_db import Base
 
 
 class Record(Base):

@@ -2,7 +2,7 @@ import pprint
 from typing import Type
 from itertools import groupby
 
-from models import Record
+from app.models import Record
 
 
 def format_items_data(items_data: list[Type[Record]]) -> dict:

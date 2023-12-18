@@ -1,8 +1,8 @@
 import uvicorn
 from fastapi import FastAPI
 
-from format_answers import format_items_data
-from services import DBManager
+from app.format_answers import format_items_data
+from app.services import DBManager
 
 app = FastAPI(
     title='Тестовое задание'
